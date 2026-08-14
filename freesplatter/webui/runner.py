@@ -254,7 +254,7 @@ class FreeSplatterRunner:
             image = Image.open(image_file)
             w, h = image.size
 
-            image_rgba = self.run_segmentation(image)
+            image_rgba = self.run_segmentation(image, do_rembg=do_rembg)
             if image.mode == 'RGBA':
                 image, alpha = rgba_to_white_background(image_rgba)
                 image = v2.functional.center_crop(image, min(h, w))
