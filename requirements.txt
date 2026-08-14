@@ -10,7 +10,7 @@ transformers==4.46.1
 tokenizers==0.20.1
 diffusers==0.31.0
 accelerate==1.0.1
-xformers==0.0.22.post7
+xformers==0.0.27.post2
 grpcio-status==1.33.2 
 protobuf==3.20.2
 safetensors
